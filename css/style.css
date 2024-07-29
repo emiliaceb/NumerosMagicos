@@ -19,7 +19,7 @@ nav a, nav icon{
     font-size: 25px;
     font-weight: 400;
 }
-button{
+.botonComenzar{
     background-color: #d776ac;
     font-size: 28px;
     color: white;
@@ -44,7 +44,7 @@ main h1, button,a{
     font-family: "Acme", sans-serif;
     font-style: normal;
 }
-button:hover{
+.botonComenzar:hover{
   transform: scale(1.1);
   background-color:#9d699a;
   color: white;
@@ -61,6 +61,15 @@ button:hover{
       transform: scale(1);
     }
 }
+label,input,button{
+  display: flex;
+  flex-direction: row;
+}
+button{
+  align-items: center;
+  align-content: center;
+}
+
 @media (max-width: 576px){
     main h1{
         font-weight: 600;
