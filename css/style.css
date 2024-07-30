@@ -40,7 +40,7 @@ main h1{
   font-weight: 600;
   font-size: 60px;
 }
-main h1, button,a{
+main h1, button,a, label, p{
     font-family: "Acme", sans-serif;
     font-style: normal;
 }
@@ -61,14 +61,38 @@ main h1, button,a{
       transform: scale(1);
     }
 }
-label,input,button{
+form{
   display: flex;
+  flex-direction: column;
+  max-width: 9cm !important
+}
+.buttonEnviar{
+ background-color: #9d699a;
+ min-width: 3cm;
+ align-self: center;
+ color: white;
+ margin-top: 5px;
+ padding: 5px;
+ font-size: 20px;
+ border: none;
+}
+label{
+  font-weight: 100;
+  font-size: 22px;
+}
+input{
+  max-width: 1cm;
+  align-self: center;
+}
+#resultado{
+  text-align: center;
+  max-width: 9cm !important;
+  font-size: 20px;
+display: flex;
   flex-direction: row;
 }
-button{
-  align-items: center;
-  align-content: center;
-}
+
+
 
 @media (max-width: 576px){
     main h1{
